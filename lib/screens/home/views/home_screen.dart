@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             const Text(
-              'MaruPizza',
+              'MyPizza',
               style: TextStyle(fontWeight: FontWeight.w900, fontSize: 30),
             )
           ],
