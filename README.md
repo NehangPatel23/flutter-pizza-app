@@ -138,7 +138,7 @@ The details page displays a picture of the pizza and the nutritional information
 
 ### Admin App
 
-In addition to the above app, I also implemented a [Flutter Admin web app]() that would help the admins of the Pizza Delivery App to add new pizza options.
+In addition to the above app, I also implemented a [Flutter Admin web app](https://github.com/NehangPatel23/flutter-pizza-admin-app) that would help the admins of the Pizza Delivery App to add new pizza options.
 
 Once the admin launches the web app, they are directed to a login page similar to that of the actual app:
 
