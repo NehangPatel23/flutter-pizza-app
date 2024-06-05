@@ -12,6 +12,8 @@ A Flutter application that mimics a typical pizza delivery app, with user authen
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 2. [Usage](#usage)
+    - [MyPizza App](#mypizza-app)
+    - [Admin Web App](#admin-app)
 3. [Contributing](#contributing)
 4. [Contact](#contact)
 5. [Credits](#credits)
@@ -105,6 +107,8 @@ These instructions will help you set up and run the Flutter application locally 
 
 ## Usage
 
+### MyPizza App
+
 Once you launch the application on your emulator, you will see a screen similar to the following:
 
 **Sign-in Screen:**
@@ -131,7 +135,36 @@ The details page displays a picture of the pizza and the nutritional information
 
 *Again, there is also a 'Buy Now' button to add a pizza to the shopping cart, but I have not implemented that functionality yet.*
 
-That is all I have implemented for now! There is a lot more that could be implemented in this app, but that's something for later!
+
+### Admin App
+
+In addition to the above app, I also implemented a [Flutter Admin web app]() that would help the admins of the Pizza Delivery App to add new pizza options.
+
+Once the admin launches the web app, they are directed to a login page similar to that of the actual app:
+
+![alt text](assets/admin_login.png)
+
+After loggin in with their admin credentials, which are differentiated by Firebase from the users' credentials by an ```isAdmin``` field of the authentication, they are taken to the main admin screen (**I still need to work on the elements of the dashboard.**):
+
+![alt text](assets/admin_dashboard.png)
+
+On clicking the 'Create Pizza' link on the top navigation bar, this screen pops up:
+
+![alt text](assets/create_pizza.png)
+
+This is the feature that enables the admins to add new pizzas to the app without having to manually enter all the details monotonously into the Firebase database.
+
+On entering the information about the pizza, the 'Create Pizza' page would look like this:
+
+![alt text](assets/new_pizza.png)
+
+When the 'Create Pizza' button is clicked, the new pizza gets added to the list of available pizzas in Firebase and in the app:
+
+![alt text](assets/new_pizza_added.png)
+
+That's how the admins can add new variations of pizzas and other items to the app.
+
+That is all I have implemented for now! There is a lot more that could be implemented in this app and in the admin dashboard, but that's something for later!
 
 ## Contributing
 
